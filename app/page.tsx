@@ -18,7 +18,7 @@ const capabilities = [
 export default function Home() {
   return <main>
     <header className="site-header">
-      <a className="wordmark" href="#top" aria-label="Kashish Mendiratta, home">KM<span className="signal-dot" /></a>
+      <a className="wordmark" href="#top" aria-label="Kashish Mendiratta, home">KM</a>
       <nav aria-label="Primary navigation"><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
       <a className="availability" href="mailto:kashishmendiratta14@gmail.com"><span /> Open to ML / AI roles</a>
     </header>

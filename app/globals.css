@@ -12,7 +12,6 @@ img { display:block; max-width:100%; }
 
 .site-header { position:sticky; top:0; z-index:20; height:76px; padding:0 clamp(24px,5vw,76px); display:grid; grid-template-columns:1fr auto 1fr; align-items:center; border-bottom:1px solid var(--line); background:color-mix(in srgb,var(--paper) 90%,transparent); backdrop-filter:blur(14px); }
 .wordmark { font-size:18px; font-weight:750; letter-spacing:-.04em; display:inline-flex; align-items:center; width:fit-content; }
-.signal-dot { width:7px; height:7px; border-radius:50%; background:var(--acid); margin-left:3px; box-shadow:0 0 0 3px #101212; }
 nav { display:flex; gap:34px; font-size:13px; }
 nav a,.availability { transition:opacity .2s ease; }
 nav a:hover,.availability:hover { opacity:.55; }
