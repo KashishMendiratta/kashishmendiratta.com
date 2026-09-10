@@ -1,5 +1,4 @@
 import { ArrowDownRight, ArrowUpRight, Mail, MapPin } from 'lucide-react';
-import Link from 'next/link';
 
 type Locale = 'en' | 'de';
 
@@ -28,7 +27,7 @@ const copy = {
     repository:'Repository', demo:'Live demo', view:'View repository for',
     aboutKicker:'About · The connective tissue', aboutTitle:['Scientist’s curiosity.','Engineer’s audacity.'], aboutLead:'My background sits where data complexity meets strong computational systems. I care about what a model learns, where it fails, and whether someone else can reliably run it.', aboutBody:'That means clean experiments, honest evaluation, useful interfaces, and deployment practices that move a project beyond the notebook. I’m now looking for an ML / AI engineering role where I can build systems with measurable real-world value.',
     capabilities:[['Build','Python, SQL, PyTorch, scikit-learn, Hugging Face'],['Ship','FastAPI, Docker, AWS EC2, GitHub Actions'],['Evaluate','SHAP, model evaluation, error analysis, leakage'],['Explore','Agents, MCP, retrieval, reliable AI systems']],
-    trajectory:'Trajectory', timeline:[['2025—Now','Master’s thesis · HIPS','Scaling leakage-aware dataset splitting for large ML datasets under Prof. Dr. Olga Kalinina.'],['2021—2027','M.Sc. Bioinformatics · Saarland University','Advanced study across machine learning, computation, and the life sciences.'],['2020—2021','Freelance Data Science Analyst','Built a churn-prediction pipeline on 10,000+ transactions and connected model output to stock planning.']],
+    trajectory:'Trajectory', timeline:[['2025—Now','Master’s thesis · HIPS','Scaling leakage-aware dataset splitting for large ML datasets under Prof. Dr. Olga Kalinina.'],['2021—Present','M.Sc. Bioinformatics · Saarland University','Advanced study across machine learning, computation, and the life sciences.'],['2020—2021','Freelance Data Science Analyst','Built a churn-prediction pipeline on 10,000+ transactions and connected model output to stock planning.']],
     contactKicker:'Let’s build something useful', contactTitle:'Have a hard ML problem?', email:'Email', location:'Saarbrücken, Germany', summary:'Portfolio summary', keyOutcomes:'Key outcomes'
   },
   de: {
@@ -47,7 +46,7 @@ const copy = {
     repository:'Repository', demo:'Live-Demo', view:'Repository ansehen:',
     aboutKicker:'Über mich · Die Verbindung', aboutTitle:['Neugier einer Wissenschaftlerin.','Mut einer Ingenieurin.'], aboutLead:'Mein Hintergrund liegt dort, wo komplexe Daten auf leistungsfähige Computersysteme treffen. Mich interessiert, was ein Modell lernt, wo es scheitert und ob andere es zuverlässig ausführen können.', aboutBody:'Das bedeutet saubere Experimente, ehrliche Evaluation, nützliche Schnittstellen und Deployment-Praktiken, die ein Projekt über das Notebook hinausbringen. Ich suche eine ML- / AI-Engineering-Rolle, in der ich Systeme mit messbarem realem Nutzen entwickeln kann.',
     capabilities:[['Entwickeln','Python, SQL, PyTorch, scikit-learn, Hugging Face'],['Ausliefern','FastAPI, Docker, AWS EC2, GitHub Actions'],['Evaluieren','SHAP, Modellevaluation, Fehleranalyse, Leakage'],['Erkunden','Agents, MCP, Retrieval, zuverlässige AI-Systeme']],
-    trajectory:'Werdegang', timeline:[['2025—Heute','Masterarbeit · HIPS','Skalierung von leakage-bewusstem Dataset-Splitting für große ML-Datensätze unter Prof. Dr. Olga Kalinina.'],['2021—2027','M.Sc. Bioinformatik · Universität des Saarlandes','Vertiefung in Machine Learning, Informatik und Lebenswissenschaften.'],['2020—2021','Freelance Data Science Analyst','Entwicklung einer Churn-Prediction-Pipeline für mehr als 10.000 Transaktionen und Integration der Modellergebnisse in die Bestandsplanung.']],
+    trajectory:'Werdegang', timeline:[['2025—Heute','Masterarbeit · HIPS','Skalierung von leakage-bewusstem Dataset-Splitting für große ML-Datensätze unter Prof. Dr. Olga Kalinina.'],['2021—Heute','M.Sc. Bioinformatik · Universität des Saarlandes','Vertiefung in Machine Learning, Informatik und Lebenswissenschaften.'],['2020—2021','Freelance Data Science Analyst','Entwicklung einer Churn-Prediction-Pipeline für mehr als 10.000 Transaktionen und Integration der Modellergebnisse in die Bestandsplanung.']],
     contactKicker:'Lassen Sie uns etwas Nützliches entwickeln', contactTitle:'Ein anspruchsvolles ML-Problem?', email:'E-Mail', location:'Saarbrücken, Deutschland', summary:'Portfolio-Übersicht', keyOutcomes:'Wichtigste Ergebnisse'
   }
 } as const;
@@ -59,7 +58,15 @@ export function PortfolioPage({ locale }: { locale: Locale }) {
     <header className="site-header">
       <a className="wordmark" href={`${home}#top`} aria-label="Kashish Mendiratta, home">KM</a>
       <nav aria-label="Primary navigation"><a href="#work">{t.nav[0]}</a><a href="#about">{t.nav[1]}</a><a href="#contact">{t.nav[2]}</a></nav>
-      <div className="header-actions"><div className="language-switch" aria-label="Language"><Link className={locale==='en'?'active':''} href="/">EN</Link><span>/</span><Link className={locale==='de'?'active':''} href="/de">DE</Link></div><a className="availability" href="mailto:kashishmendiratta14@gmail.com"><span /> {t.availability}</a></div>
+      <div className="header-actions">
+        <div className="language-switch" aria-label="Language">
+          {/* oxlint-disable-next-line next/no-html-link-for-pages -- full navigation makes locale switching reliable on the deployed worker */}
+          <a className={locale==='en'?'active':''} href="/">EN</a><span>/</span>
+          {/* oxlint-disable-next-line next/no-html-link-for-pages -- full navigation makes locale switching reliable on the deployed worker */}
+          <a className={locale==='de'?'active':''} href="/de">DE</a>
+        </div>
+        <a className="availability" href="mailto:kashishmendiratta14@gmail.com"><span /> {t.availability}</a>
+      </div>
     </header>
     <section className="hero section-shell" id="top"><div className="hero-grid" aria-hidden="true" /><div className="hero-copy"><p className="kicker">{t.kicker}</p><h1>{t.hero[0]}<span>{t.hero[1]}</span></h1><p className="hero-intro">{t.intro}</p><div className="hero-actions"><a className="button button-primary" href="#work">{t.explore} <ArrowDownRight size={18} /></a><a className="button button-quiet" href="https://github.com/KashishMendiratta" target="_blank" rel="noreferrer">GitHub <ArrowUpRight size={16} /></a></div></div><aside className="hero-proof" aria-label={t.summary}><div className="proof-label">{t.currently}</div><p>{t.study}</p><div className="mini-rule" /><dl>{t.details.map(([a,b])=><div key={a}><dt>{a}</dt><dd>{b}</dd></div>)}</dl></aside><div className="hero-index" aria-hidden="true">PORTFOLIO / 2026</div></section>
     <section className="proof-strip" aria-label={t.keyOutcomes}>{t.outcomes.map(([a,b])=><div key={b}><strong>{a}</strong><span>{b}</span></div>)}</section>
