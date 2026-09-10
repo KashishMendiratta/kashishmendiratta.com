@@ -1,4 +1,4 @@
-# Kashish Mendiratta — Portfolio
+# Kashish Mendiratta- Portfolio
 
 Source for [kashishmendiratta.com](https://kashishmendiratta.com), a portfolio focused on applied machine learning, AI engineering, and deployable systems.
 
