@@ -14,7 +14,7 @@ const copy = {
   en: {
     nav:['Work','About','Contact'], availability:'Open to ML / AI roles', kicker:'Applied ML engineer · Bioinformatics',
     hero:['I turn uncertain data into','working ML systems.'], intro:'I build, evaluate, and deploy machine-learning products, from scientific prototypes to tested APIs and live cloud applications.', explore:'Explore selected work',
-    currently:'Currently', study:'Completing an M.Sc. in Bioinformatics at Saarland University.', details:[['Focus','End-to-end ML & AI engineering'],['Based','Saarbrücken, Germany'],['Languages','English C2 · German B2 · Hindi C2']],
+    currently:'Currently', study:'Completing an M.Sc. in Bioinformatics at Saarland University.', details:[['Based','Saarbrücken, Germany'],['Languages','English C2 · German B2 · Hindi C2']],
     outcomes:[['5.8×','faster dataset splitting'],['0.8477','macro-F1 demand classifier'],['22','spoken languages modelled'],['Live','containerized ML platform']],
     workKicker:'Selected work · 2024—2026', workTitle:'Evidence, not adjectives.', workIntro:'Five projects showing the path from research question to evaluated model to shipped software.',
     projects:[
@@ -33,7 +33,7 @@ const copy = {
   de: {
     nav:['Projekte','Über mich','Kontakt'], availability:'Offen für ML- / AI-Rollen', kicker:'Angewandte ML-Entwicklung · Bioinformatik',
     hero:['Ich verwandle unsichere Daten in','funktionierende ML-Systeme.'], intro:'Ich entwickle, evaluiere und deploye Machine-Learning-Produkte – von wissenschaftlichen Prototypen bis zu getesteten APIs und produktiven Cloud-Anwendungen.', explore:'Ausgewählte Projekte',
-    currently:'Aktuell', study:'M.Sc.-Studium der Bioinformatik an der Universität des Saarlandes.', details:[['Fokus','End-to-End ML- & AI-Engineering'],['Standort','Saarbrücken, Deutschland'],['Sprachen','Englisch C2 · Deutsch B2 · Hindi C2']],
+    currently:'Aktuell', study:'M.Sc.-Studium der Bioinformatik an der Universität des Saarlandes.', details:[['Standort','Saarbrücken, Deutschland'],['Sprachen','Englisch C2 · Deutsch B2 · Hindi C2']],
     outcomes:[['5,8×','schnelleres Dataset-Splitting'],['0,8477','Macro-F1 im Demand Classifier'],['22','modellierte Sprachen'],['Live','containerisierte ML-Plattform']],
     workKicker:'Ausgewählte Projekte · 2024—2026', workTitle:'Belege statt Behauptungen.', workIntro:'Fünf Projekte zeigen meinen Weg von der Forschungsfrage über ein evaluiertes Modell bis zur ausgelieferten Software.',
     projects:[
