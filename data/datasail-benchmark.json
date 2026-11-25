@@ -1,0 +1,9 @@
+{
+  "benchmarkDataset": "QM9",
+  "endToEndSpeedup": 8.7,
+  "evaluatedDatasets": 10,
+  "splitSeeds": 5,
+  "fullDatasailReferenceDatasets": 9,
+  "sourceRepository": "https://github.com/KashishMendiratta/DataSAIL_scaling",
+  "scope": "provenance study"
+}

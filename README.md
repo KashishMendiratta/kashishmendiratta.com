@@ -24,11 +24,14 @@ Open `http://localhost:3000`.
 ## Quality checks
 
 ```bash
+pnpm verify:metrics
 pnpm lint
 pnpm build
 ```
 
 Every push and pull request to `main` runs the same checks in GitHub Actions.
+
+DataSAIL claims are defined once in `data/datasail-benchmark.json`. The verification step checks the English and German copy, the QM9 visual, and guards against the retired HIV metric returning.
 
 ## Featured work
 

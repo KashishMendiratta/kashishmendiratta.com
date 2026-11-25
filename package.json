@@ -9,6 +9,7 @@
     "dev": "vinext dev",
     "build": "vinext build",
     "start": "wrangler dev --config dist/server/wrangler.json",
+    "verify:metrics": "node scripts/verify-datasail-metrics.mjs",
     "lint": "oxlint app",
     "format": "oxfmt"
   },

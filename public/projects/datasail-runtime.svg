@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" role="img" aria-labelledby="title desc">
+  <title id="title">Verified DataSAIL QM9 benchmark</title>
+  <desc id="desc">The scaled approach was 8.7 times faster end to end on QM9 in a study spanning 10 datasets and five seeds.</desc>
+  <rect width="1000" height="600" rx="32" fill="#11100d"/>
+  <text x="72" y="92" fill="#d4cfc2" font-family="Arial, sans-serif" font-size="22" letter-spacing="3">DATASAIL · VERIFIED BENCHMARK</text>
+  <text x="72" y="185" fill="#ffffff" font-family="Arial, sans-serif" font-size="76" font-weight="700">QM9</text>
+  <text x="72" y="250" fill="#f0aa35" font-family="Arial, sans-serif" font-size="52" font-weight="700">8.7× FASTER</text>
+  <text x="72" y="292" fill="#d4cfc2" font-family="Arial, sans-serif" font-size="24">end-to-end runtime comparison</text>
+  <line x1="72" y1="352" x2="928" y2="352" stroke="#4a463d" stroke-width="2"/>
+  <text x="72" y="430" fill="#ffffff" font-family="Arial, sans-serif" font-size="42" font-weight="700">10 DATASETS</text>
+  <text x="72" y="472" fill="#aaa397" font-family="Arial, sans-serif" font-size="21">molecular benchmark suite</text>
+  <text x="568" y="430" fill="#ffffff" font-family="Arial, sans-serif" font-size="42" font-weight="700">5 SEEDS</text>
+  <text x="568" y="472" fill="#aaa397" font-family="Arial, sans-serif" font-size="21">repeated split experiments</text>
+  <rect x="72" y="525" width="856" height="2" fill="#f0aa35"/>
+</svg>
