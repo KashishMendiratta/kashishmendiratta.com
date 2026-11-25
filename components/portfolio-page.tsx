@@ -13,7 +13,7 @@ const sharedProjects = [
 
 const copy = {
   en: {
-    nav:['Work','About','Contact'], availability:'Open to ML & computer-vision internships and working-student roles (DE/EU)', kicker:'Applied ML engineer · Bioinformatics',
+    nav:['Work','About','Contact'], availability:'Available full-time from February 2027 · Seeking a full-time role', kicker:'Applied ML engineer · Bioinformatics',
     hero:['I turn uncertain data into','working ML systems.'], intro:'Applied ML for images, signals and scientific data, from clean datasets to evaluated, deployed models.', nowLabel:'Now', now:'Thesis: scalable, leakage-aware dataset splitting · Building: quantized segmentation on edge hardware', explore:'Explore selected work',
     currently:'Currently', study:'Completing an M.Sc. in Bioinformatics at Saarland University.', details:[['Focus','End-to-end ML & AI engineering'],['Based','Saarbrücken, Germany'],['Languages','English C2 · German B2 · Hindi C2']],
     outcomes:[dataSailCopy.en.outcome,['0.8477','macro-F1 demand classifier'],['22','spoken languages modelled'],['Live','containerized ML platform']],
@@ -32,7 +32,7 @@ const copy = {
     contactKicker:'Let’s build something useful', contactTitle:'Have a hard ML problem?', email:'Email', location:'Saarbrücken, Germany', summary:'Portfolio summary', keyOutcomes:'Key outcomes'
   },
   de: {
-    nav:['Projekte','Über mich','Kontakt'], availability:'Offen für Praktika und Werkstudentenstellen in ML & Computer Vision', kicker:'Angewandte ML-Entwicklung · Bioinformatik',
+    nav:['Projekte','Über mich','Kontakt'], availability:'Ab Februar 2027 in Vollzeit verfügbar · Suche eine Vollzeitstelle', kicker:'Angewandte ML-Entwicklung · Bioinformatik',
     hero:['Ich verwandle unsichere Daten in','funktionierende ML-Systeme.'], intro:'Angewandtes ML für Bilder, Signale und wissenschaftliche Daten – von sauberen Datensätzen bis zu evaluierten, deployten Modellen.', nowLabel:'Aktuell', now:'Masterarbeit: skalierbares, leakage-bewusstes Dataset-Splitting · In Arbeit: quantisierte Segmentierung auf Edge-Hardware', explore:'Ausgewählte Projekte',
     currently:'Aktuell', study:'M.Sc.-Studium der Bioinformatik an der Universität des Saarlandes.', details:[['Fokus','End-to-End ML- & AI-Engineering'],['Standort','Saarbrücken, Deutschland'],['Sprachen','Englisch C2 · Deutsch B2 · Hindi C2']],
     outcomes:[dataSailCopy.de.outcome,['0,8477','Macro-F1 im Demand Classifier'],['22','modellierte Sprachen'],['Live','containerisierte ML-Plattform']],
