@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { PortfolioPage } from '@/components/portfolio-page';
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: 'Kashish Mendiratta - ML- / AI-Ingenieurin',
   description: 'Angewandte ML-Ingenieurin für evaluierte, deploybare AI-Systeme, wissenschaftliche Daten und reale Anwendungen.',

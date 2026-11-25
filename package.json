@@ -1,5 +1,5 @@
 {
-  "name": "sites-project",
+  "name": "kashishmendiratta-portfolio",
   "version": "0.1.0",
   "private": true,
   "engines": {
@@ -9,6 +9,8 @@
     "dev": "vinext dev",
     "build": "vinext build",
     "start": "wrangler dev --config dist/server/wrangler.json",
+    "deploy:cloudflare": "pnpm build && wrangler deploy --config dist/server/wrangler.json",
+    "deploy:production": "pnpm build && wrangler deploy --config dist/server/wrangler.json --domain kashishmendiratta.com",
     "verify:metrics": "node scripts/verify-datasail-metrics.mjs",
     "lint": "oxlint app",
     "format": "oxfmt"
